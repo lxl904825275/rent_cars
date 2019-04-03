@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" build-on-make="true" name="imgUrl">
-    <output-path>D:/files/image</output-path>
+    <output-path>$PROJECT_DIR$/web/carImg</output-path>
     <root id="root">
-      <element id="dir-copy" path="D:/files/image" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web/carImg" />
     </root>
   </artifact>
 </component>

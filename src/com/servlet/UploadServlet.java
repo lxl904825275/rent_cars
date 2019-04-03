@@ -24,8 +24,11 @@ public class UploadServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
+        System.out.println("111111111111111111111");
+      //  String realPath = this.getServletContext().getRealPath("/");
 //        保存地址
-        File savePath =  new File("D:\\files\\image");
+        File savePath =  new File("E:\\IdeaProjects\\web_car\\web\\carImg");
+        System.out.println(savePath);
         savePath.mkdirs();
 //        加随机数，防止被覆盖
         String uuid = UUID.randomUUID().toString().replace("-", "");
@@ -51,7 +54,7 @@ public class UploadServlet extends HttpServlet {
         JSONObject json = new JSONObject();
         json.put("uploaded",1);
         json.put("fileName",fileName);
-        json.put("url","http://localhost:8080/"+fileName);
+        json.put("url","http://localhost:8080/web_car/"+fileName);
 
         request.getSession().setAttribute("image",fileName);
         System.out.println(json);
