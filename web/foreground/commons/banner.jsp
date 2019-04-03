@@ -10,25 +10,7 @@
 
                 </div>
                 <!-- Advance Search -->
-                <div class="advance-search">
-                    <form action="#">
-                        <div class="row">
-                            <!-- Store Search -->
-                            <div class="col-lg-6 col-md-12">
-                                <div class="block d-flex">
-                                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Search for store">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div class="block d-flex">
-                                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="search" placeholder="Search for store">
-                                    <!-- Search Button -->
-                                    <button class="btn btn-main">SEARCH</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+
             </div>
         </div>
     </div>
@@ -52,20 +34,30 @@
                     <div class="card">
                         <div class="thumb-content">
                             <!-- <div class="price">$200</div> -->
-                            <a href="">
-                                <img class="card-img-top img-fluid" src="<%= request.getContextPath()%>/static/img/products-1.jpg" alt="Card image cap">
+                            <a href="https://huodong.zuche.com/activityplanning/newtopic/oefreeofcharge0328.html?szhdbm=20190328_freeofcharge_pc&utm_medium=pc&utm_source=guanfang&campaign_code=freeofcharge0328">
+                                <img class="card-img-top img-fluid" src="<%= request.getContextPath()%>/AdImg/1.jpg" alt="Card image cap">
                             </a>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title"><a href="">11inch Macbook Air</a></h4>
-                            <ul class="list-inline product-meta">
-                                <li class="list-inline-item">
-                                    <a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href=""><i class="fa fa-calendar"></i>26th December</a>
-                                </li>
-                            </ul>
+                            <h4 class="card-title">新用户特惠，首日0元租车</h4>
+                            <p class="card-text">首单再返50元租车券,自驾旅途，从0启程</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <!-- product card -->
+                <div class="product-item bg-light">
+                    <div class="card">
+                        <div class="thumb-content">
+                            <!-- <div class="price">$200</div> -->
+                            <a href="https://huodong.zuche.com/activityplanning/newtopic/oeactivity69.html?szhdbm=20180305_activity69_pc&utm_campaign=activity69&utm_source=guanwang&utm_medium=pc">
+                                <img class="card-img-top img-fluid" src="<%= request.getContextPath()%>/AdImg/2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">万辆新车来袭 69元起租</h4>
+                            <p class="card-text">适用于全国直营门店，宝马、 别克、大众...</p>
                         </div>
                     </div>
                 </div>
@@ -77,66 +69,12 @@
                         <div class="thumb-content">
                             <!-- <div class="price">$200</div> -->
                             <a href="">
-                                <img class="card-img-top img-fluid" src="<%= request.getContextPath()%>/static/img/products-2.jpg" alt="Card image cap">
+                                <img class="card-img-top img-fluid" src="<%= request.getContextPath()%>/AdImg/3.jpg" alt="Card image cap">
                             </a>
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title"><a href="">Full Study Table Combo</a></h4>
-                            <ul class="list-inline product-meta">
-                                <li class="list-inline-item">
-                                    <a href=""><i class="fa fa-folder-open-o"></i>Furnitures</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href=""><i class="fa fa-calendar"></i>26th December</a>
-                                </li>
-                            </ul>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
-                            <div class="product-ratings">
-                                <ul class="list-inline">
-                                    <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-                                    <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-                                    <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-                                    <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-            <div class="col-sm-12 col-lg-4">
-                <!-- product card -->
-                <div class="product-item bg-light">
-                    <div class="card">
-                        <div class="thumb-content">
-                            <!-- <div class="price">$200</div> -->
-                            <a href="">
-                                <img class="card-img-top img-fluid" src="<%= request.getContextPath()%>/static/img/products-3.jpg" alt="Card image cap">
-                            </a>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="">11inch Macbook Air</a></h4>
-                            <ul class="list-inline product-meta">
-                                <li class="list-inline-item">
-                                    <a href=""><i class="fa fa-folder-open-o"></i>Electronics</a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href=""><i class="fa fa-calendar"></i>26th December</a>
-                                </li>
-                            </ul>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aliquam!</p>
-                            <div class="product-ratings">
-                                <ul class="list-inline">
-                                    <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-                                    <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-                                    <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-                                    <li class="list-inline-item selected"><i class="fa fa-star"></i></li>
-                                    <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                </ul>
-                            </div>
+                            <h4 class="card-title">赫兹全球租车，点我直达！</h4>
+                            <p class="card-text">全球租车，支持异国还车，超多优惠轮番来袭</p>
                         </div>
                     </div>
                 </div>
@@ -152,8 +90,7 @@
             <div class="col-12">
                 <!-- Section title -->
                 <div class="section-title">
-                    <h2>All Categories</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident!</p>
+                    <h2>热租车辆</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
@@ -207,7 +144,6 @@
                             </div>
                         </div>
                     </div>
-
 
                 </div>
             </div>

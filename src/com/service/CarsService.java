@@ -24,4 +24,32 @@ public class CarsService {
         return dao.findD();
     }
 
+    public List<Cars> findBaoma(){
+        return dao.findBaoma();
+    }
+
+    public List<Cars> findAodi(){
+        return dao.findAodi();
+    }
+
+    public List<Cars> findBieke(){
+        return dao.findBieke();
+    }
+
+    public List<Cars> findXiandai(){
+        return dao.findXiandai();
+    }
+
+    public List<Cars> findDazhong(){
+        return dao.findDazhong();
+    }
+
+    public List<Cars> findWoerwo(){
+        return dao.findWoerwo();
+    }
+
+    public List<Cars> query(){
+        return dao.query();
+    }
+
 }

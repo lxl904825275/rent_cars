@@ -11,10 +11,19 @@ public class Client {
     private int age;
     private String idNumber;
     private String email;
-    private int tel;
+    private String tel;
     private String driveNumber;
     private String driveType;
     private String address;
+    private int integral;
+
+    public int getIntegral() {
+        return integral;
+    }
+
+    public void setIntegral(int integral) {
+        this.integral = integral;
+    }
 
     @Override
     public String toString() {
@@ -32,7 +41,7 @@ public class Client {
                 '}';
     }
 
-    public Client(int clientId, String name, String sex, int age, String idNumber, String email, int tel, String driveNumber, String driveType, String address) {
+    public Client(int clientId, String name, String sex, int age, String idNumber, String email, String tel, String driveNumber, String driveType, String address) {
         this.clientId = clientId;
         this.name = name;
         this.sex = sex;
@@ -45,6 +54,33 @@ public class Client {
         this.address = address;
     }
 
+    public Client(int clientId, String name, String sex, int age, String idNumber, String email, String tel, String driveNumber, String driveType, String address, int integral) {
+        this.clientId = clientId;
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
+        this.idNumber = idNumber;
+        this.email = email;
+        this.tel = tel;
+        this.driveNumber = driveNumber;
+        this.driveType = driveType;
+        this.address = address;
+        this.integral = integral;
+    }
+
+    public Client(String name, String sex, int age, String idNumber, String email, String tel, String driveNumber, String driveType, String address, int integral) {
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
+        this.idNumber = idNumber;
+        this.email = email;
+        this.tel = tel;
+        this.driveNumber = driveNumber;
+        this.driveType = driveType;
+        this.address = address;
+        this.integral = integral;
+    }
+
     public Client() {
     }
 
@@ -52,7 +88,7 @@ public class Client {
         return clientId;
     }
 
-    public void setClientId(int clientId) {
+    public void setClient_Id(int clientId) {
         this.clientId = clientId;
     }
 
@@ -84,7 +120,7 @@ public class Client {
         return idNumber;
     }
 
-    public void setIdNumber(String idNumber) {
+    public void setId_Number(String idNumber) {
         this.idNumber = idNumber;
     }
 
@@ -96,11 +132,11 @@ public class Client {
         this.email = email;
     }
 
-    public int getTel() {
+    public String getTel() {
         return tel;
     }
 
-    public void setTel(int tel) {
+    public void setTel(String tel) {
         this.tel = tel;
     }
 
@@ -108,7 +144,7 @@ public class Client {
         return driveNumber;
     }
 
-    public void setDriveNumber(String driveNumber) {
+    public void setDrive_Number(String driveNumber) {
         this.driveNumber = driveNumber;
     }
 
@@ -116,7 +152,7 @@ public class Client {
         return driveType;
     }
 
-    public void setDriveType(String driveType) {
+    public void setDrive_Type(String driveType) {
         this.driveType = driveType;
     }
 
@@ -128,7 +164,7 @@ public class Client {
         this.address = address;
     }
 
-    public Client(String name, String sex, int age, String idNumber, String email, int tel, String driveNumber, String driveType, String address) {
+    public Client(String name, String sex, int age, String idNumber, String email, String tel, String driveNumber, String driveType, String address) {
         this.name = name;
         this.sex = sex;
         this.age = age;

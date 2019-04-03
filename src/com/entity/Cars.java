@@ -37,6 +37,25 @@ public class Cars {
         this.num = num;
         this.context = context;
     }
+    public Cars(String carName, int gradeId,String imageUrl, int dailyRent, int monthRent, int num, String context) {
+        this.carName = carName;
+        this.gradeId = gradeId;
+        this.imageUrl = imageUrl;
+        this.dailyRent = dailyRent;
+        this.monthRent = monthRent;
+        this.num = num;
+        this.context = context;
+    }
+
+    public Cars(int carId, String carName, int gradeId, int dailyRent, int monthRent, int num, String context) {
+        this.carId = carId;
+        this.carName = carName;
+        this.gradeId = gradeId;
+        this.dailyRent = dailyRent;
+        this.monthRent = monthRent;
+        this.num = num;
+        this.context = context;
+    }
 
     @Override
     public String toString() {
@@ -57,7 +76,7 @@ public class Cars {
         return carId;
     }
 
-    public void setCarId(int carId) {
+    public void setCar_Id(int carId) {
         this.carId = carId;
     }
 
@@ -65,7 +84,7 @@ public class Cars {
         return carName;
     }
 
-    public void setCarName(String carName) {
+    public void setCar_Name(String carName) {
         this.carName = carName;
     }
 
@@ -73,7 +92,7 @@ public class Cars {
         return gradeId;
     }
 
-    public void setGradeId(int gradeId) {
+    public void setGrade_Id(int gradeId) {
         this.gradeId = gradeId;
     }
 
@@ -81,7 +100,7 @@ public class Cars {
         return isImage;
     }
 
-    public void setIsImage(int isImage) {
+    public void setIs_Image(int isImage) {
         this.isImage = isImage;
     }
 
@@ -89,7 +108,7 @@ public class Cars {
         return imageUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
+    public void setImage_Url(String imageUrl) {
         this.imageUrl = imageUrl;
     }
 
@@ -97,7 +116,7 @@ public class Cars {
         return dailyRent;
     }
 
-    public void setDailyRent(int dailyRent) {
+    public void setDaily_Rent(int dailyRent) {
         this.dailyRent = dailyRent;
     }
 
@@ -105,7 +124,7 @@ public class Cars {
         return monthRent;
     }
 
-    public void setMonthRent(int monthRent) {
+    public void setMonth_Rent(int monthRent) {
         this.monthRent = monthRent;
     }
 

@@ -1,7 +1,6 @@
 package com.util;
 
 import com.entity.PageBean;
-import com.entity.PageBean;
 
 /**
  * @autor : WL;

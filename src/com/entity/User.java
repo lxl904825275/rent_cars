@@ -4,12 +4,26 @@ package com.entity;
  * @autor : WL;
  * @date : 2019/3/26 0026
  */
-public class User {
+public class User extends Client {
     private int userId;
     private String username;
     private String password;
     private String user;
     private String userstate;
+    private int clientId;
+
+    public User(String username, int clientId) {
+        this.username = username;
+        this.clientId = clientId;
+    }
+
+    public int getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(int clientId) {
+        this.clientId = clientId;
+    }
 
     public User(int userId, String userstate) {
         this.userId = userId;
@@ -31,6 +45,14 @@ public class User {
     }
 
     public User(String username, String password, String user, String userstate) {
+        this.username = username;
+        this.password = password;
+        this.user = user;
+        this.userstate = userstate;
+    }
+
+    public User(int userId, String username, String password, String user, String userstate) {
+        this.userId = userId;
         this.username = username;
         this.password = password;
         this.user = user;

@@ -1,40 +1,19 @@
 package com.entity;
 
 /**
- * @autor : WL;
- * @date : 2019/3/18 0018
+ * @author: Iman
+ * date   : 2019/3/18
  */
 public class PageBean {
     private int count;
-    private int pageIndex = 1;
+    private int pageIndex=1;
     private int pageCount;
-
-    public int getPages(){
-        return (count+pageCount-1)/pageCount;
-    }
-
-    public int getIndex(){
+    public int getIndex() {
         return (pageIndex-1)*pageCount;
     }
-
-    public PageBean() {
+    public int getPages() {
+        return (count+pageCount-1)/pageCount;
     }
-
-    public PageBean(int count, int pageIndex, int pageCount) {
-        this.count = count;
-        this.pageIndex = pageIndex;
-        this.pageCount = pageCount;
-    }
-
-    @Override
-    public String toString() {
-        return "PageBean{" +
-                "count=" + count +
-                ", pageIndex=" + pageIndex +
-                ", pageCount=" + pageCount +
-                '}';
-    }
-
     public int getCount() {
         return count;
     }

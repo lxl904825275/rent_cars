@@ -1,8 +1,11 @@
 package com.servlet;
 
 import com.alibaba.fastjson.JSONObject;
+import com.entity.Client;
 import com.entity.ResultCode;
 import com.entity.User;
+import com.entity.User1;
+import com.service.ClientService;
 import com.service.UserService;
 import com.util.Md5Util;
 
@@ -11,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
@@ -20,6 +24,7 @@ import java.io.IOException;
 @WebServlet(name = "LoginServlet",urlPatterns = "/LoginServlet")
 public class LoginServlet extends HttpServlet {
     private UserService service=new UserService();
+    private ClientService clientService=new ClientService();
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
@@ -45,11 +50,12 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String md5 = Md5Util.MD5(password);
-        User user = service.queryOne(username);
+        User user = service.findOne(username);
         ResultCode rc = null;
         if(user!=null){
             if(user.getPassword().equals(md5)){
                 rc = new ResultCode("1001","登录成功");
+                loginInfo(request,response);
             }else{
                 rc = new ResultCode("1002","密码不正确");
             }
@@ -87,7 +93,7 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         String md5 = Md5Util.MD5(password);
-        User user = new User(username, md5);
+        User1 user = new User1(username, md5);
         int i = service.add(user);
         response.getWriter().print(""+i);
     }
@@ -112,5 +118,14 @@ public class LoginServlet extends HttpServlet {
         }
 
         response.getWriter().print(JSONObject.toJSONString(rc));
+    }
+    private void loginInfo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        String username = request.getParameter("username");
+        Client client = clientService.findOne(username);
+        System.out.println(client);
+        session.setAttribute("username",username);
+        session.setAttribute("client",client);
+
     }
 }

@@ -3,6 +3,7 @@ package com.service;
 import com.dao.UserDao;
 import com.dao.impl.UserDaoImpl;
 import com.entity.User;
+import com.entity.User1;
 
 /**
  * @autor : WL;
@@ -10,8 +11,8 @@ import com.entity.User;
  */
 public class UserService {
     private UserDao dao=new UserDaoImpl();
-    public User queryOne(String username){
-        return dao.queryOne(username);
+    public User findOne(String username){
+        return dao.findOne(username);
     }
     public int addUser(User user){
         return dao.addUser(user);
@@ -19,7 +20,7 @@ public class UserService {
     public int updatePassword(User user){
         return dao.updatePassword(user);
     }
-    public int add(User user){
+    public int add(User1 user){
         return dao.add(user);
     }
     public int updateState(User user){
