@@ -295,7 +295,7 @@ public class CarsDaoImpl implements CarsDao {
                 car.setCar_Name(carName);
                 car.setGrade_Id(gradeId);
                 car.setIs_Image(isImage);
-                car.setImage_Url(imageUrl);
+                car.setImage_Url("carImg/"+imageUrl);
                 car.setDaily_Rent(dailyRent);
                 car.setMonth_Rent(monthRent);
                 car.setNum(num);

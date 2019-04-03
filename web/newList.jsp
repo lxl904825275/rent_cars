@@ -26,7 +26,6 @@
             <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-0">
                 <div class="widget dashboard-container my-adslist">
                     <h3 class="widget-header">我的订单</h3>
-                    <p>以下是订单信息:</p>
                     <table class="table table-responsive product-dashboard-table">
                         <thead>
                         <tr>
@@ -56,12 +55,6 @@
                                 <span><strong>租赁费用: </strong><time name="allCost" id="allCost">${orderList.allCost}</time></span>
                                 <span class="location"><strong>联系方式:</strong><time name="tel" id="tel">${orderList.tel}</time></span>
                             </td>
-                            <h3 class="title">${orderList.carName}</h3>
-                            <span class="add-id"><strong>订单编号:</strong>${orderList.orderId}</span>
-                            <span><strong>下订单时间: </strong><time>${orderList.orderTime}</time> </span>
-                            <span><strong>结束时间: </strong><time>${orderList.overTime}</time> </span>
-                            <span><strong>租赁时长: </strong><time>${orderList.lease}</time> </span>
-                            <span><strong>租赁费用: </strong>${orderList.allCost}</span>--%>
                             <td class="product-category"><span class="categories">${orderList.allCost}(元)</span>
                             </td>
                             <td class="action" data-title="Action">
