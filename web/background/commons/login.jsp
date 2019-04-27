@@ -44,7 +44,7 @@
             var form = layui.form;
             form.verify({
                 username: function(value, item){ //value：表单的值、item：表单的DOM对象
-                    if(!new RegExp("^[a-zA-Z][a-zA-Z0-9_]{4,15}$").test(value)){
+                    if(!new RegExp("^[a-zA-Z][a-zA-Z0-9_]{3,15}$").test(value)){
                         return '用户名字母开头，允许5-16字节，允许字母数字下划线';
                     }
                 }
@@ -59,7 +59,7 @@
             form.on('submit(login)', function(data){
                 $.ajax({
                     type: "POST",
-                    url: "<%=request.getContextPath()%>/UserLoginServlet",
+                    url: "<%=request.getContextPath()%>/UserServlet",
                     data: "username="+data.field.username+"&password="+data.field.password,
                     success: function(msg){
                         var obj = eval("("+msg+")");

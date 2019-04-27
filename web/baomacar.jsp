@@ -43,7 +43,7 @@
                                     <div class="card">
                                         <div class="thumb-content">
                                             <!-- <div class="price">$200</div> -->
-                                            <a href="<%=request.getContextPath()%>${query.carId}">
+                                            <a href="https://order.zuche.com/cardetail-853?t=0&stock=1">
                                                 <img class="card-img-top img-fluid" src="${query.imageUrl}" alt="Card image cap">
                                             </a>
                                         </div>

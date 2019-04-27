@@ -345,37 +345,38 @@ public class CarsDaoImpl implements CarsDao {
 
     @Override
     public List<Cars> findBaoma() {
-        String sql = "select * from cars where car_name like '宝马%'";
+        String sql = "select * from cars where car_name like 'BM%' order by daily_rent desc";
+//        String sql = "select * from cars where grade_id = 2 order by daily_rent desc";
         return getCarsList(sql);
     }
 
     @Override
     public List<Cars> findAodi() {
-        String sql = "select * from cars where car_name like '奥迪%'";
+        String sql = "select * from cars where car_name like 'AO%' order by daily_rent desc";
         return getCarsList(sql);
     }
 
     @Override
     public List<Cars> findBieke() {
-        String sql = "select * from cars where car_name like '别克%'";
+        String sql = "select * from cars where car_name like 'B%' order by daily_rent desc";
         return getCarsList(sql);
     }
 
     @Override
     public List<Cars> findXiandai() {
-        String sql = "select * from cars where car_name like '现代%'";
+        String sql = "select * from cars where car_name like 'X%' order by daily_rent desc";
         return getCarsList(sql);
     }
 
     @Override
     public List<Cars> findDazhong() {
-        String sql = "select * from cars where car_name like '大众%'";
+        String sql = "select * from cars where car_name like 'A%' order by daily_rent desc";
         return getCarsList(sql);
     }
 
     @Override
     public List<Cars> findWoerwo() {
-        String sql = "select * from cars where car_name like '沃尔沃%'";
+        String sql = "select * from cars where car_name like 'W%' order by daily_rent desc";
         return getCarsList(sql);
     }
 }

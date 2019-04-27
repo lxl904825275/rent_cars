@@ -12,4 +12,17 @@
         <servlet-name>ReportServer</servlet-name>
         <url-pattern>/ReportServer</url-pattern>
     </servlet-mapping>
+    <!--内置字符过滤器-->
+    <filter>
+        <filter-name>characterEncoding</filter-name>
+        <filter-class>com.fr.third.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>characterEncoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>

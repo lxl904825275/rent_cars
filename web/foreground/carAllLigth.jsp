@@ -18,7 +18,7 @@
         </div>
 
         <div class="widget category-list">
-            <h4 class="widget-header">车辆名称</h4>
+            <h4 class="widget-header">车辆种类</h4>
             <ul class="category-list">
                 <li><a href="<%=request.getContextPath()%>/CarsServlet?action=findDazhong">大众</a></li>
                 <li><a href="<%=request.getContextPath()%>/CarsServlet?action=findBieke">别克</a></li>

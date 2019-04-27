@@ -27,7 +27,7 @@ public class UploadServlet extends HttpServlet {
         System.out.println("111111111111111111111");
       //  String realPath = this.getServletContext().getRealPath("/");
 //        保存地址
-        File savePath =  new File("E:\\IdeaProjects\\web_car\\web\\carImg");
+        File savePath =  new File("D:\\carImg");
         System.out.println(savePath);
         savePath.mkdirs();
 //        加随机数，防止被覆盖

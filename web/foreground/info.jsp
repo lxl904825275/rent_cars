@@ -1,7 +1,7 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <script src="<%=request.getContextPath()%>/plugins/jquery/dist/jquery.min.js"></script>
-<script src="<%=request.getContextPath()%>/plugins/jquery-ui/jquery-ui.min.js"></script>
+<%--<script src="<%=request.getContextPath()%>/plugins/jquery-ui/jquery-ui.min.js"></script>--%>
 <script src="<%=request.getContextPath()%>/plugins/tether/js/tether.min.js"></script>
 <script src="<%=request.getContextPath()%>/plugins/raty/jquery.raty-fa.js"></script>
 <script src="<%=request.getContextPath()%>/plugins/bootstrap/dist/js/popper.min.js"></script>

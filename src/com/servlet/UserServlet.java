@@ -107,9 +107,11 @@ public class UserServlet extends HttpServlet {
             if(user.getPassword().equals(password)) {
                 response.getWriter().print(1);
                 request.getSession().setAttribute("currentDate", DateUtil.formatDate(new Date(), "yyyy-MM-dd HH:mm:ss"));
+                System.out.println(11);
                 loginInfo(request, response);
             }else{
                 response.getWriter().print(0);
+                System.out.println(22);
             }
         }
         if ("delete".equals(action)){
